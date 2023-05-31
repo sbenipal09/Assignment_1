@@ -12,6 +12,3 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-input[submit]{
-    text-align: center;
-}
