@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/CSS/header.css" th:href="@{/CSS/header.css}">
+
+    <link rel="stylesheet" href="../static/CSS/footer.css" th:href="@{/CSS/footer.css}">
+    <title>Result</title>
+</head>
+
+<h1>Game Result</h1>
+
+<h3>Chosen Box:</h3>
+<p>Box Number: <span th:text="${chosenBox.boxNumber}"></span></p>
+<p>Prize: <span th:text="${chosenBox.prize}"></span></p>
+<p>Content: <span th:text="${chosenBox.content}"></span></p>
+
+<h3>All Boxes:</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Box Number</th>
+        <th>Prize</th>
+        <th>Content</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="box : ${boxes}">
+        <td th:text="${box.boxNumber}"></td>
+        <td th:text="${box.prize}"></td>
+        <td th:text="${box.content}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<a href="/">Play Again</a>
+</body>
+</html>
