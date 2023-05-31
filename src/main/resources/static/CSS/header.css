@@ -15,6 +15,9 @@ h2{
 
 header {
     background-color: aquamarine;
+    text-align: center;
+    height: 60px;
+    padding: 5px;
 }
 table{border: 2px solid black;}
 h3{
@@ -22,4 +25,7 @@ h3{
 }
 .btn{
     text-align: center;
+}
+*{
+    margin: auto;
 }
