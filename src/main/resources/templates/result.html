@@ -20,19 +20,20 @@
 <p>Content: <span th:text="${chosenBox.content}"></span></p>
 
 <h3>All Boxes:</h3>
-<table style="border: 2px solid blue">
+
+<table>
     <thead>
     <tr>
         <th>Box Number</th>
         <th>Prize</th>
-        <th>Content</th>
+
     </tr>
     </thead>
     <tbody>
     <tr th:each="box : ${boxes}">
         <td th:text="${box.boxNumber}"></td>
         <td th:text="${box.prize}"></td>
-        <td th:text="${box.content}"></td>
+       <!--<td th:text="${box.content}"></td> -->
     </tr>
     </tbody>
 </table>
