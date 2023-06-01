@@ -17,24 +17,17 @@ public class Box {
         return boxNumber;
     }
 
-    public void setBoxNumber(int boxNumber) {
-        this.boxNumber = boxNumber;
-    }
 
     public String getPrize() {
         return prize;
     }
 
-    public void setPrize(String prize) {
-        this.prize = prize;
-    }
+
     public String getContent() {
         return content;
     }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
+
     @Override
     public String toString() {
         return "Box{" +
