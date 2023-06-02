@@ -9,7 +9,7 @@ footer {
 h2{
     font-family: "Candara Light", serif;
 }
-.choice-container{
+.choice{
     display: flex;
     justify-content: space-between;
 }
