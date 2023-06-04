@@ -50,7 +50,7 @@ public class GameLogic implements GameBox {
 
 
     private String getRandomPrize() {
-        String[] prizes = {"Candy", "iPhone", "$100", "Empty"};
+        String[] prizes = {"Candy", "iPhone", "$100", "Empty","Laptop","Video Game"};
         Random random = new Random();
         int index = random.nextInt(prizes.length);
         return prizes[index];
